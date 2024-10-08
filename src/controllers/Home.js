@@ -1,4 +1,6 @@
-const Dashboard = class Dashboard {
+import viewHome from '../views/home';
+
+const Home = class Home {
   constructor(params) {
     this.el = document.querySelector('#root');
     this.params = params;
@@ -9,6 +11,7 @@ const Dashboard = class Dashboard {
 
   async render() {
     return `
+    ${viewHome()}
     `;
   }
 
@@ -17,4 +20,4 @@ const Dashboard = class Dashboard {
   }
 };
 
-export default Dashboard;
+export default Home;

@@ -1,11 +1,16 @@
 import Router from './router';
-import Dashboard from './controllers/Dashboard';
+import Home from './controllers/Home';
+import Projects from './controllers/Projects';
 
 import './output.css';
 
 const routes = [{
   url: '/',
-  controller: Dashboard
+  controller: Home
+},
+{
+  url: '/projects',
+  controller: Projects
 }];
 
 new Router(routes);
