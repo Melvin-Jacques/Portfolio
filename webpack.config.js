@@ -6,8 +6,9 @@ module.exports = {
   entry: "./src/index.js", //if you unuse typescript entry
   //entry: './src/index.ts',
   output: {
-    filename: "src/[name].[fullhash].js",
+    filename: "src/[name].js",
     path: path.resolve(__dirname, "dist"),
+    // publicPath: "./",
   },
   module: {
     rules: [
@@ -63,14 +64,33 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      filename: "index.html",
       template: path.resolve(__dirname, "src/index.html"),
       inject: "body",
       hash: true,
+    }),  
+    new HtmlWebpackPlugin({
+      filename: "projects.html",
+      template: path.resolve(__dirname, "src/projects.html"),
+      inject: "body",
+      hash: true,
+    }),  
+    new HtmlWebpackPlugin({
+      filename: "contact.html",
+      template: path.resolve(__dirname, "src/contact.html"),
+      inject: "body",
+      hash: true,
     }),
-    new ESLintPlugin({
-      extensions: ["js", "ts"],
-      exclude: "node_modules",
-      files: "./src/",
+    new HtmlWebpackPlugin({
+      filename: "about.html",
+      template: path.resolve(__dirname, "src/about.html"),
+      inject: "body",
+      hash: true,
     }),
+    // new ESLintPlugin({
+    //   extensions: ["js", "ts"],
+    //   exclude: "node_modules",
+    //   files: "./src/",
+    // }),
   ],
 };

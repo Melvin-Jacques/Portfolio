@@ -1,3 +1,5 @@
+import logo from '../assets/logo.png';
+
 export default () => (
   `
   <nav class="bg-gray-800">
@@ -28,7 +30,7 @@ export default () => (
         </div>
         <div class="flex flex-1 items-center justify-between sm:items-stretch sm:justify-between">
         <div class="flex flex-shrink-0 items-center">
-            <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+            <img class="h-8 w-auto" src="${logo}" alt="Your Company">
         </div>
         <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">

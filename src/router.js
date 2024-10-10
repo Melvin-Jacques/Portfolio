@@ -1,18 +1,36 @@
 import Error404 from './controllers/Error404';
 
-const Router = class Router {
+class Router {
   constructor(routes = []) {
-    this.path = window.location.pathname;
-    this.params = !window.location.search ? {} : Object.fromEntries(
-      window.location.search
-        .split('?')[1]
-        .split('&')
-        .map((param) => param.split('='))
-    );
-
     this.routes = routes;
 
+    this.onHashChange = this.onHashChange.bind(this);
+
+    this.onHashChange();
+
+    window.addEventListener('hashchange', this.onHashChange);
+  }
+
+  onHashChange() {
+    this.path = window.location.hash.slice(1) || '/';
+    this.params = this.getParamsFromHash();
+
     this.run();
+  }
+
+  getParamsFromHash() {
+    const hash = window.location.hash.slice(1);
+    const [queryString] = hash.split('?');
+    const params = {};
+
+    if (queryString) {
+      queryString.split('&').forEach((param) => {
+        const [key, value] = param.split('=');
+        params[key] = decodeURIComponent(value);
+      });
+    }
+
+    return params;
   }
 
   startController() {
@@ -39,6 +57,6 @@ const Router = class Router {
   run() {
     this.startController();
   }
-};
+}
 
 export default Router;
