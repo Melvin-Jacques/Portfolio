@@ -3,6 +3,7 @@ import viewContact from '../views/contact';
 const Contact = class Contact {
   constructor(params) {
     this.el = document.querySelector('#root');
+    this.title = document.querySelector('#title-page');
     this.params = params;
     this.data = [];
 
@@ -16,6 +17,7 @@ const Contact = class Contact {
   }
 
   async run() {
+    this.title.textContent = 'Melvin J - Contact';
     this.el.innerHTML = await this.render();
   }
 };

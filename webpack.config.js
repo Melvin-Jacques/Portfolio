@@ -68,25 +68,7 @@ module.exports = {
       template: path.resolve(__dirname, "src/index.html"),
       inject: "body",
       hash: true,
-    }),  
-    new HtmlWebpackPlugin({
-      filename: "projects.html",
-      template: path.resolve(__dirname, "src/projects.html"),
-      inject: "body",
-      hash: true,
-    }),  
-    new HtmlWebpackPlugin({
-      filename: "contact.html",
-      template: path.resolve(__dirname, "src/contact.html"),
-      inject: "body",
-      hash: true,
-    }),
-    new HtmlWebpackPlugin({
-      filename: "about.html",
-      template: path.resolve(__dirname, "src/about.html"),
-      inject: "body",
-      hash: true,
-    }),
+    })
     // new ESLintPlugin({
     //   extensions: ["js", "ts"],
     //   exclude: "node_modules",

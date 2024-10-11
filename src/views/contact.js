@@ -15,7 +15,7 @@ export default () => (
           </p>
 
           <div class="mt-8">
-            <a href="#" class="text-2xl font-bold text-pink-600">07 67 49 07 11</a>
+            <a href="" class="text-2xl font-bold text-pink-600">07 67 49 07 11</a>
           </div>
         </div>
 

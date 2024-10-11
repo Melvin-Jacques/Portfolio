@@ -27,13 +27,13 @@ export default () => (
         </p>
         <div class="mt-8 flex flex-wrap gap-4 text-center">
           <a
-            href="./projects"
+            href="#/projects"
             class="block w-full rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-indigo-700 focus:outline-none focus:ring active:bg-indigo-500 sm:w-auto"
           >
             Mes Projets
           </a>
           <a
-            href="./contact"
+            href="#/contact"
             class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-indigo-600 shadow hover:text-indigo-700 focus:outline-none focus:ring active:text-indigo-500 sm:w-auto"
           >
             Contactez-moi

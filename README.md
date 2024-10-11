@@ -32,3 +32,9 @@ Analyse the coding rules with :
 ```bash
 npm run lint
 ```
+
+Commenter la ligne 11 (public path) du fichier webpack.config.js si on veut entrer en mode développement, faire l'inverse si on veut entrer en production puis faire 
+```bash
+npm run build
+```
+pour  Update le fichier distant, et donc passer en mode production.

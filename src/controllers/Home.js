@@ -3,6 +3,7 @@ import viewHome from '../views/home';
 const Home = class Home {
   constructor(params) {
     this.el = document.querySelector('#root');
+    this.title = document.querySelector('#title-page');
     this.params = params;
     this.data = [];
 
@@ -16,6 +17,7 @@ const Home = class Home {
   }
 
   async run() {
+    this.title.textContent = 'Melvin J - Portfolio';
     this.el.innerHTML = await this.render();
   }
 };

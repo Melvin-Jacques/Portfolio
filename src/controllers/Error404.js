@@ -1,6 +1,7 @@
 const Error404 = class {
   constructor() {
     this.el = document.querySelector('#root');
+    this.title = document.querySelector('#title-page');
 
     this.run();
   }
@@ -12,7 +13,7 @@ const Error404 = class {
           <h1 class="text-9xl font-bold text-gray-800">404</h1>
           <p class="text-2xl md:text-3xl text-gray-600 mt-4">Oops! Page not found.</p>
           <p class="text-gray-500 mt-2">Sorry, the page you're looking for doesn't exist.</p>
-          <a href="/" class="mt-6 inline-block px-6 py-3 bg-blue-600 rounded-md text-lg hover:bg-blue-700 transition-colors">
+          <a href="#/" class="mt-6 inline-block px-6 py-3 bg-blue-600 rounded-md text-lg hover:bg-blue-700 transition-colors">
             Go back to Homepage
           </a>
         </div>
@@ -21,6 +22,7 @@ const Error404 = class {
   }
 
   run() {
+    this.title.textContent = 'Error 404 - Page Not Found';
     this.el.innerHTML = this.render();
   }
 };

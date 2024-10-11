@@ -3,6 +3,7 @@ import viewProjects from '../views/projects';
 const Projects = class Projects {
   constructor(params) {
     this.el = document.querySelector('#root');
+    this.title = document.querySelector('#title-page');
     this.params = params;
     this.data = [];
 
@@ -16,6 +17,7 @@ const Projects = class Projects {
   }
 
   async run() {
+    this.title.textContent = 'Melvin J - Projects';
     this.el.innerHTML = await this.render();
   }
 };
