@@ -4,6 +4,7 @@ import viewAnnouncement from './announcement';
 
 export default () => (
   `
+  ${viewAnnouncement()}
   ${viewHeader()}
   <section class="bg-gray-900 text-white">
     <div class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
@@ -213,14 +214,11 @@ export default () => (
     </div>
   </section>
   <span class="flex items-center">
-    <span class="h-px flex-1 bg-black"></span>
-    <span class="shrink-0 px-6">Mon parcours</span>
-    <span class="h-px flex-1 bg-black"></span>
+    <span class="h-px flex-1 bg-white"></span>
+    <span class="shrink-0 px-6 text-white">Mon parcours</span>
+    <span class="h-px flex-1 bg-white"></span>
   </span>
 
-  <!-- Footer en dehors du gradient -->
-  <footer class="relative z-10">
-    ${viewFooter()}
-  </footer>
+  ${viewFooter()}
   `
 );

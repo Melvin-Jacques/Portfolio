@@ -24,17 +24,27 @@ export default () => (
             class="absolute inset-0 h-full w-full object-cover"
           />
 
-          <!-- Effet dégradé -->
-          <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-90"></div>
+          <div class="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+            <div class="p-4 sm:p-6 ">
+              <time datetime="2022-10-10" class="block text-xs text-white/90 font-bold"> 10th Oct 2022 </time>
 
-          <div class="relative pt-32 sm:pt-48 lg:pt-64">
-            <div class="p-4 sm:p-6">
-              <time datetime="2022-10-10" class="block text-xs text-white/90">10th Oct 2022</time>
-              <a href="#">
-                <h3 class="mt-0.5 text-lg text-white">Slice - <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 dark:bg-purple-700 dark:text-purple-100">Live</span></h3>
+              <a href="#/">
+                <h3 class="mt-0.5 text-lg text-white font-medium">
+                  Slice - 
+                    <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 dark:bg-purple-700 dark:text-purple-100">
+                      PHP
+                    </span>
+                    <span class="whitespace-nowrap rounded-full bg-orange-200 px-2.5 py-0.5 text-sm text-orange-800 dark:bg-orange-600 dark:text-orange-100">
+                      HTML/CSS
+                    </span>
+                </h3>
               </a>
+
               <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Un projet de découpage d'images en direct pour une expérience utilisateur fluide.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
+                pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
+                quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
+                atque dignissimos. Molestias explicabo corporis voluptatem?
               </p>
             </div>
           </div>
@@ -50,17 +60,19 @@ export default () => (
             class="absolute inset-0 h-full w-full object-cover"
           />
 
-          <!-- Effet dégradé -->
-          <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-90"></div>
-
-          <div class="relative pt-32 sm:pt-48 lg:pt-64">
+          <div class="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
             <div class="p-4 sm:p-6">
-              <time datetime="2022-11-15" class="block text-xs text-white/90">15th Nov 2022</time>
+              <time datetime="2022-10-10" class="block text-xs text-white/90"> 10th Oct 2022 </time>
+
               <a href="#">
-                <h3 class="mt-0.5 text-lg text-white">CodeFlow</h3>
+                <h3 class="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
               </a>
+
               <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Une application pour les développeurs, optimisée pour faciliter la collaboration sur des projets complexes.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
+                pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
+                quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
+                atque dignissimos. Molestias explicabo corporis voluptatem?
               </p>
             </div>
           </div>

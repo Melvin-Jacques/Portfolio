@@ -1,5 +1,5 @@
 import viewHeader from './header';
-import viewFooter from './footer';
+import viewFooter from './footer';  // Ajout de l'import du footer
 import viewAnnouncement from './announcement';
 import BgImg from '../assets/technology1.jpg';
 
@@ -9,14 +9,14 @@ export default () => (
   ${viewHeader()}
 
   <section
-    class="relative bg-cover bg-center bg-no-repeat items-center"
-    style="height: calc(100vh - 64px); background-image: url(${BgImg})"
+    class="relative bg-cover bg-center bg-no-repeat flex items-center"
+    style="height: calc(100vh - 112px); background-image: url(${BgImg})"
   >
-    <!-- Gradient uniquement sur cette div -->
+    <!-- Gradient sur la section entière -->
     <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-gray-900/20"></div>
 
     <!-- Contenu principal avec le gradient -->
-    <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:items-center lg:px-8">
+    <div class="relative w-full h-full mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:items-center lg:px-8">
       <div class="max-w-xl text-left ltr:sm:text-left rtl:sm:text-right">
         <h1 class="text-3xl font-extrabold text-white sm:text-5xl">
           Hey, I'm
@@ -41,11 +41,10 @@ export default () => (
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Footer en dehors du gradient -->
-  <footer class="relative z-10">
+  <footer class="absolute inset-x-0 bottom-0 w-full">
     ${viewFooter()}
   </footer>
+  </section>
   `
 );

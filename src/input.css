@@ -2,3 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Animation de transition pour les boutons */
+.nav-button {
+  position: relative;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-button.active {
+  background-color: #1f2937; /* Couleur active */
+  transform: translateX(5px); /* Slide de 5px vers la droite */
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.5s ease;
+}
