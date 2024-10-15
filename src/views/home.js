@@ -13,7 +13,7 @@ export default () => (
     style="height: calc(100vh - 112px); background-image: url(${BgImg})"
   >
     <!-- Gradient sur la section entière -->
-    <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-gray-900/20"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/95 to-gray-900/20"></div>
 
     <!-- Contenu principal avec le gradient -->
     <div class="relative w-full h-full mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:items-center lg:px-8">

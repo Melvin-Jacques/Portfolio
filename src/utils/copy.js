@@ -1,4 +1,3 @@
-import viewAlert from '../views/alert';
 import Swal from 'sweetalert2';
 
 
@@ -9,9 +8,14 @@ export function copyToClipBoard(elementId, svgId) {
   navigator.clipboard.writeText(textToCopy)
     .then(() => {
       Swal.fire({
-        title: 'Successfully copied to clipboard',
-        text: 'Now you can paste it with Ctrl+V',
+        title: 'Copied to clipboard',
+        html: 'You can paste it with <strong>Ctrl+V</strong>',
+        icon:'success',
+        toast: true,
+        showConfirmButton: false,
         position: 'top',
+        timer: 2000,
+        timerProgressBar: true,
         showClass: {
           popup: `
           animate__animated
@@ -27,14 +31,10 @@ export function copyToClipBoard(elementId, svgId) {
         `,
         },
         grow: 'row',
-        showConfirmButton: false,
-        showCloseButton: true,
       })
       
-      // Ajouter la classe d'animation
       svgElement.classList.add('shake');
       
-      // Retirer l'animation après qu'elle soit terminée (0.5s)
       setTimeout(() => {
         svgElement.classList.remove('shake');
       }, 500);

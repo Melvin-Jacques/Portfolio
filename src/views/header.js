@@ -1,9 +1,9 @@
-import logo from '../assets/logo.png';
+import logo from '../assets/logo (2).png';
 
 export default () => {
-    
+
   const currentHash = window.location.hash;
-  const isActive = (hash) => currentHash === hash ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white';
+  const isActive = (hash) => currentHash === hash ? 'bg-indigo-700 border-b border-b-2 border-indigo-700 text-white' : 'text-gray-300 hover:bg-indigo-400 hover:text-white';
   const activeButton = document.querySelector('.active');
   if (activeButton) {
     applyActiveAnimation(activeButton);
@@ -28,15 +28,17 @@ export default () => {
         </div>
         <div class="flex flex-1 items-center justify-between sm:items-stretch sm:justify-between">
           <div class="flex flex-shrink-0 items-center">
-            <img class="h-8 w-auto" src="${logo}" alt="Your Company">
+            <a href="#/" class="flex flex-shrink-0 items-center">
+              <img class="h-8 w-auto" src="${logo}" alt="Your Company">
+            </a>
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="#/" class="rounded-md px-3 py-2 text-sm font-medium ${isActive('#/')}" aria-current="page">Home</a>
-              <a href="#/projects" class="rounded-md px-3 py-2 text-sm font-medium ${isActive('#/projects')}">Projects</a>
-              <a href="#/contact" class="rounded-md px-3 py-2 text-sm font-medium ${isActive('#/contact')}">Contact</a>
-              <a href="#/about" class="rounded-md px-3 py-2 text-sm font-medium ${isActive('#/about')}">About</a>
+              <a href="#/" class="rounded px-3 py-2 text-sm font-medium ${isActive('#/')}" aria-current="page">Home</a>
+              <a href="#/projects" class="rounded px-3 py-2 text-sm font-medium ${isActive('#/projects')}">Projects</a>
+              <a href="#/contact" class="rounded px-3 py-2 text-sm font-medium ${isActive('#/contact')}">Contact</a>
+              <a href="#/about" class="rounded px-3 py-2 text-sm font-medium ${isActive('#/about')}">About</a>
             </div>
           </div>
         </div>

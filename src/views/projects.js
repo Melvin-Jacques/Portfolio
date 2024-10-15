@@ -15,120 +15,161 @@ export default () => (
     </div>
     
     <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 py-8">
+
       <!-- Première carte -->
       <div class="rounded-lg bg-gray-200">
-        <article class="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-          <img
-            alt="Project Image 1"
-            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
-            class="absolute inset-0 h-full w-full object-cover"
-          />
+        <a href="#">
+          <article class="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+            <img
+              alt="Project Image 1"
+              src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+              class="absolute inset-0 h-full w-full object-cover"
+            />
 
-          <div class="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-            <div class="p-4 sm:p-6 ">
-              <time datetime="2022-10-10" class="block text-xs text-white/90 font-bold"> 10th Oct 2022 </time>
+            <div class="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+              <div class="p-4 sm:p-6 ">
+                <time datetime="2022-10-10" class="block text-xs text-white/90 font-bold">10th Oct 2022</time>
 
-              <a href="#/">
-                <h3 class="mt-0.5 text-lg text-white font-medium">
-                  Slice - 
-                    <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 dark:bg-purple-700 dark:text-purple-100">
-                      PHP
-                    </span>
-                    <span class="whitespace-nowrap rounded-full bg-orange-200 px-2.5 py-0.5 text-sm text-orange-800 dark:bg-orange-600 dark:text-orange-100">
-                      HTML/CSS
-                    </span>
+                <h3 class="mt-0.5 text-lg text-white font-medium" id="0">
+                  <a href="#/project/Slice">
+                    Slice - 
+                  </a>
+                  <span class="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-violet-600/65 border-2 border-violet-600 px-2.5 py-0.5 text-xs text-white">
+                    PHP
+                  </span>
+                  <span class="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-yellow-500/65 border-2 border-yellow-500 px-2.5 py-0.5 text-xs text-white">
+                    JS
+                  </span>
+                  <span class="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-orange-600/65 border-2 border-orange-600 px-2.5 py-0.5 text-xs text-white">
+                    HTML
+                  </span>
+                  <span class="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-cyan-600/65 border-2 border-cyan-600 px-2.5 py-0.5 text-xs text-white">
+                    CSS
+                  </span>
                 </h3>
-              </a>
 
-              <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-                pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-                atque dignissimos. Molestias explicabo corporis voluptatem?
-              </p>
+                <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+                  Ce site e-commerce, réalisé en une semaine avec PHP et une architecture MVC, présente une structure bien organisée. Bien que le projet ne soit pas entièrement terminé, il illustre une bonne maîtrise des principes de développement back-end.
+                </p>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </a>
       </div>
+
 
       <!-- Deuxième carte -->
       <div class="rounded-lg bg-gray-200">
-        <article class="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-          <img
-            alt="Project Image 2"
-            src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
-            class="absolute inset-0 h-full w-full object-cover"
-          />
+        <a href="#">
+          <article class="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+            <img
+              alt="Project Image 1"
+              src="../assets/sliceImg.png"
+              class="absolute inset-0 h-full w-full object-cover"
+            />
 
-          <div class="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-            <div class="p-4 sm:p-6">
-              <time datetime="2022-10-10" class="block text-xs text-white/90"> 10th Oct 2022 </time>
+            <div class="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+              <div class="p-4 sm:p-6 ">
+                <time datetime="2022-10-10" class="block text-xs text-white/90 font-bold">10th Oct 2022</time>
 
-              <a href="#">
-                <h3 class="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
-              </a>
+                <h3 class="mt-0.5 text-lg text-white font-medium" id="0">
+                  <a href="#/project/ColocApp">
+                    Slice - 
+                  </a>
+                  <span class="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-violet-600/65 border-2 border-violet-600 px-2.5 py-0.5 text-xs text-white">
+                    PHP
+                  </span>
+                  <span class="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-orange-600/65 border-2 border-orange-600 px-2.5 py-0.5 text-xs text-white">
+                    HTML
+                  </span>
+                  <span class="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-cyan-600/65 border-2 border-cyan-600 px-2.5 py-0.5 text-xs text-white">
+                    CSS
+                  </span>
+                </h3>
 
-              <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-                pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-                atque dignissimos. Molestias explicabo corporis voluptatem?
-              </p>
+                <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+                  Ce site e-commerce, réalisé en une semaine avec PHP et une architecture MVC, présente une structure bien organisée. Bien que le projet ne soit pas entièrement terminé, il illustre une bonne maîtrise des principes de développement back-end.
+                </p>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </a>
       </div>
 
       <!-- Troisième carte -->
       <div class="rounded-lg bg-gray-200">
-        <article class="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-          <img
-            alt="Project Image 3"
-            src="https://images.unsplash.com/photo-1523475496153-3db46b776c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
-            class="absolute inset-0 h-full w-full object-cover"
-          />
+        <a href="#">
+          <article class="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+            <img
+              alt="Project Image 1"
+              src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+              class="absolute inset-0 h-full w-full object-cover"
+            />
 
-          <!-- Effet dégradé -->
-          <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-90"></div>
+            <div class="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+              <div class="p-4 sm:p-6 ">
+                <time datetime="2022-10-10" class="block text-xs text-white/90 font-bold">10th Oct 2022</time>
 
-          <div class="relative pt-32 sm:pt-48 lg:pt-64">
-            <div class="p-4 sm:p-6">
-              <time datetime="2022-12-01" class="block text-xs text-white/90">1st Dec 2022</time>
-              <a href="#">
-                <h3 class="mt-0.5 text-lg text-white">TaskManager</h3>
-              </a>
-              <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Une application intuitive de gestion de tâches pour améliorer la productivité.
-              </p>
+                <h3 class="mt-0.5 text-lg text-white font-medium" id="0">
+                  <a href="#/project?projectName=Slice">
+                    Slice - 
+                  </a>
+                  <span class="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-violet-600/65 border-2 border-violet-600 px-2.5 py-0.5 text-xs text-white">
+                    PHP
+                  </span>
+                  <span class="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-orange-600/65 border-2 border-orange-600 px-2.5 py-0.5 text-xs text-white">
+                    HTML
+                  </span>
+                  <span class="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-cyan-600/65 border-2 border-cyan-600 px-2.5 py-0.5 text-xs text-white">
+                    CSS
+                  </span>
+                </h3>
+
+                <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+                  Ce site e-commerce, réalisé en une semaine avec PHP et une architecture MVC, présente une structure bien organisée. Bien que le projet ne soit pas entièrement terminé, il illustre une bonne maîtrise des principes de développement back-end.
+                </p>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </a>
       </div>
 
       <!-- Quatrième carte -->
       <div class="rounded-lg bg-gray-200">
-        <article class="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-          <img
-            alt="Project Image 4"
-            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
-            class="absolute inset-0 h-full w-full object-cover"
-          />
+        <a href="#">
+          <article class="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+            <img
+              alt="Project Image 1"
+              src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+              class="absolute inset-0 h-full w-full object-cover"
+            />
 
-          <!-- Effet dégradé -->
-          <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-90"></div>
+            <div class="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+              <div class="p-4 sm:p-6 ">
+                <time datetime="2022-10-10" class="block text-xs text-white/90 font-bold">10th Oct 2022</time>
 
-          <div class="relative pt-32 sm:pt-48 lg:pt-64">
-            <div class="p-4 sm:p-6">
-              <time datetime="2023-01-20" class="block text-xs text-white/90">20th Jan 2023</time>
-              <a href="#">
-                <h3 class="mt-0.5 text-lg text-white">Portfolio</h3>
-              </a>
-              <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Un portfolio interactif, affichant mes compétences en design et en développement web.
-              </p>
+                <h3 class="mt-0.5 text-lg text-white font-medium" id="0">
+                  <a href="#/project?projectName=Slice">
+                    Slice - 
+                  </a>
+                  <span class="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-violet-600/65 border-2 border-violet-600 px-2.5 py-0.5 text-xs text-white">
+                    PHP
+                  </span>
+                  <span class="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-orange-600/65 border-2 border-orange-600 px-2.5 py-0.5 text-xs text-white">
+                    HTML
+                  </span>
+                  <span class="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-cyan-600/65 border-2 border-cyan-600 px-2.5 py-0.5 text-xs text-white">
+                    CSS
+                  </span>
+                </h3>
+
+                <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+                  Ce site e-commerce, réalisé en une semaine avec PHP et une architecture MVC, présente une structure bien organisée. Bien que le projet ne soit pas entièrement terminé, il illustre une bonne maîtrise des principes de développement back-end.
+                </p>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </a>
       </div>
     </div>
   </div>

@@ -22,8 +22,8 @@ export default () => {
       <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div class="lg:col-span-2 lg:py-12">
-            <h1 class="text-white text-3xl font-bold pb-5">Contactez-moi</h1>
-            <p class="max-w-xl text-lg text-white">
+            <h1 class="text-white text-3xl font-bold pb-5 ">Contactez-moi</h1>
+            <p class="max-w-xl text-lg text-white ">
               Si vous voulez m'envoyer un message, merci de renseigner vos infos ici : (en cours de développement)
             </p>
 

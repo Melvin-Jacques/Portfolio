@@ -8,16 +8,24 @@ const Error404 = class {
 
   render() {
     return `
-      <div class="min-h-screen flex items-center justify-center">
+    <div class="flex justify-center items-center h-screen bg-gray-100">
+      <div class="absolute bottom-1/2">
         <div class="text-center">
-          <h1 class="text-9xl font-bold text-gray-800">404</h1>
-          <p class="text-2xl md:text-3xl text-gray-600 mt-4">Oops! Page not found.</p>
-          <p class="text-gray-500 mt-2">Sorry, the page you're looking for doesn't exist.</p>
-          <a href="#/" class="mt-6 inline-block px-6 py-3 bg-blue-600 rounded-md text-lg hover:bg-blue-700 transition-colors">
-            Go back to Homepage
+          <h1 class="text-9xl font-black text-gray-300">404</h1>
+
+          <p class="text-2xl font-bold tracking-tight text-gray-300 sm:text-4xl">Uh-oh!</p>
+
+          <p class="mt-4 text-gray-400">We can't find that page.</p>
+
+          <a
+            href="#"
+            class="mt-6 inline-block rounded bg-indigo-600 px-5 py-3 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring"
+          >
+            Go Back Home
           </a>
         </div>
       </div>
+    </div>
     `;
   }
 
