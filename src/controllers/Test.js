@@ -1,23 +1,21 @@
-import viewProject from '../views/project'; // Vue qui affiche les détails d'un projet
+import viewTest from '../views/test'; // Vue qui affiche les détails d'un projet
 
-const Project = class Project {
+const Test = class Test {
   constructor(params) {
     this.el = document.querySelector('#root');
     this.title = document.querySelector('#title-page');
-    this.projectName = params.projectName;
 
     this.run();
   }
 
   async render() {
-    return viewProject(this.projectName);
+    return viewTest();
   }
 
-  async run() {
-    console.log(this.projectName); 
-    this.title.textContent = 'Melvin J - ' + this.projectName;
+  async run() { 
+    this.title.textContent = 'Melvin J - ' + this.TestName;
     this.el.innerHTML = await this.render();
   }
 };
 
-export default Project;
+export default Test;

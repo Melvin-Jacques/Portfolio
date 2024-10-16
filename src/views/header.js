@@ -3,14 +3,22 @@ import logo from '../assets/logo (2).png';
 export default () => {
 
   const currentHash = window.location.hash;
-  const isActive = (hash) => currentHash === hash ? 'bg-indigo-700 border-b border-b-2 border-indigo-700 text-white' : 'text-gray-300 hover:bg-indigo-400 hover:text-white';
+  const isActive = (hash) => {
+    // Activer le bouton "Projects" si "projects" se trouve quelque part dans l'URL
+    if (hash === '#/projects') {
+      return currentHash.includes('project') ? 'bg-indigo-700 border-b border-b-2 border-indigo-700 text-white' : 'text-gray-300 hover:bg-indigo-400 hover:text-white';
+    }
+    // Vérifier les autres liens par correspondance exacte
+    return currentHash === hash ? 'bg-indigo-700 border-b border-b-2 border-indigo-700 text-white' : 'text-gray-300 hover:bg-indigo-400 hover:text-white';
+  };
+  
   const activeButton = document.querySelector('.active');
   if (activeButton) {
     applyActiveAnimation(activeButton);
   }
 
   return `
-  <nav class="bg-gray-800">
+  <nav class="bg-gray-800 z-40">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -39,6 +47,7 @@ export default () => {
               <a href="#/projects" class="rounded px-3 py-2 text-sm font-medium ${isActive('#/projects')}">Projects</a>
               <a href="#/contact" class="rounded px-3 py-2 text-sm font-medium ${isActive('#/contact')}">Contact</a>
               <a href="#/about" class="rounded px-3 py-2 text-sm font-medium ${isActive('#/about')}">About</a>
+              <a href="#/test" class="rounded px-3 py-2 text-sm font-medium ${isActive('#/test')}">Test</a>
             </div>
           </div>
         </div>

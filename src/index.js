@@ -4,6 +4,7 @@ import Projects from './controllers/Projects';
 import Project from './controllers/Project';
 import Contact from './controllers/Contact';
 import About from './controllers/About';
+import Test from './controllers/Test';
 
 
 import './output.css';
@@ -27,6 +28,10 @@ const routes = [{
 {
   url: '/about',
   controller: About
+},
+{
+  url: '/test',
+  controller: Test
 }
 ];
 
