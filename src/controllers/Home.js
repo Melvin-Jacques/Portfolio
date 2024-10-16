@@ -5,7 +5,6 @@ const Home = class Home {
     this.el = document.querySelector('#root');
     this.title = document.querySelector('#title-page');
     this.params = params;
-    this.data = [];
 
     this.run();
   }

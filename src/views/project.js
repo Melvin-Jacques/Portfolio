@@ -13,6 +13,7 @@ const projectsData = {
       entre le modèle, la vue et le contrôleur dans un temps limité.
     `,
     remark: 'Bien que le projet soit inachevé, il illustre une bonne maîtrise des bases du développement web FullStack.',
+    websiteLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     githubLink: 'https://github.com/Melvin-Jacques/Slice',
     objectives: `
       Slice permet aux utilisateurs de pouvoir se connecter avec une session, de voir la composition des produits, d'ajouter des articles au panier et de consulter leur commande. Du côté administration, il offre des fonctionnalités pour consulter et gérer les commandes en cours, facilitant ainsi le suivi des transactions.
@@ -51,6 +52,7 @@ const projectsData = {
     description: 'ColocApp est une application web en cours de développement pour simplifier la gestion de colocation. Elle permet aux colocataires d’organiser leurs tâches partagées et de mieux communiquer. Le design est réalisé en CSS fait main, et l’application utilise une architecture séparée entre le front-end et le back-end pour une meilleure flexibilité.',
     remark: 'En cours de développement, avec une architecture orientée objet et une gestion évolutive.',
     image: colocappImg,
+    websiteLink: '',
     githubLink: '',
     finalMessage: 'Je continue de développer l\'application pour pouvoir la publier et offrir une expérience complète aux utilisateurs. C\'est mon plus gros projet à ce jour et je souahite le réaliser entièrement.',
     objectives: `
@@ -115,22 +117,62 @@ export default (projectName) => {
               <p class="text-base font-semibold leading-7 text-indigo-400">Site Web Marchand</p>
               <div class="flex justify-between">
                 <h1 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">${project.title}</h1>
-                ${project.githubLink ? `
-                  <a 
-                    href="${project.githubLink}"
-                    class="flex items-center text-gray-300"
-                    alt="View On Github"
-                  >
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      width="30" 
-                      height="30" 
-                      viewBox="0 0 432 416"
+                <div class="flex items-center space-x-4">
+
+                  ${project.githubLink ? `
+                    <a 
+                      href="${project.githubLink}"
+                      target="_blank"
+                      rel="noopener"
+                      rel="noreferrer"
+                      class="text-gray-300"
+                      alt="View On Github"
                     >
-                      <path fill="currentColor" d="M213.5 0q88.5 0 151 62.5T427 213q0 70-41 125.5T281 416q-14 2-14-11v-58q0-27-15-40q44-5 70.5-27t26.5-77q0-34-22-58q11-26-2-57q-18-5-58 22q-26-7-54-7t-53 7q-18-12-32.5-17.5T107 88h-6q-12 31-2 57q-22 24-22 58q0 55 27 77t70 27q-11 10-13 29q-42 18-62-18q-12-20-33-22q-2 0-4.5.5t-5 3.5t8.5 9q14 7 23 31q1 2 2 4.5t6.5 9.5t13 10.5T130 371t30-2v36q0 13-14 11q-64-22-105-77.5T0 213q0-88 62.5-150.5T213.5 0z"/>
-                    </svg>
-                  </a>
-                ` : ''}
+                      <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        width="40" 
+                        height="40" 
+                        viewBox="0 0 432 416"
+                      >
+                        <path fill="currentColor" d="M213.5 0q88.5 0 151 62.5T427 213q0 70-41 125.5T281 416q-14 2-14-11v-58q0-27-15-40q44-5 70.5-27t26.5-77q0-34-22-58q11-26-2-57q-18-5-58 22q-26-7-54-7t-53 7q-18-12-32.5-17.5T107 88h-6q-12 31-2 57q-22 24-22 58q0 55 27 77t70 27q-11 10-13 29q-42 18-62-18q-12-20-33-22q-2 0-4.5.5t-5 3.5t8.5 9q14 7 23 31q1 2 2 4.5t6.5 9.5t13 10.5T130 371t30-2v36q0 13-14 11q-64-22-105-77.5T0 213q0-88 62.5-150.5T213.5 0z"/>
+                      </svg>
+                    </a>
+                  ` : ''}
+
+                  ${project.websiteLink ? `
+                    <div class="relative group">
+                      <a
+                        class="inline-block rounded-full border border-indigo-600 bg-indigo-600 p-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+                        href="${project.websiteLink}"
+                        target="_blank"
+                        rel="noopener"
+                        rel="noreferrer"
+                      >
+                        <span class="sr-only"> Download </span>
+                  
+                        <svg
+                          class="size-5 rtl:rotate-180"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                          />
+                        </svg>
+                      </a>
+                      <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:block w-auto p-2 bg-indigo-600 text-white text-sm rounded shadow-lg whitespace-nowrap transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100">
+                        Aller sur le site
+                        <div class="absolute left-1/2 bottom-[-6px] transform -translate-x-1/2 border-x-8 border-x-transparent border-t-8 border-t-indigo-600"></div>
+                      </div>
+                    </div>
+                  ` : ''}
+                  
+                </div>
               </div>
               <p class="mt-6 text-lg leading-8 text-gray-300">
                 ${project.description}
@@ -139,8 +181,30 @@ export default (projectName) => {
             </div>
           </div>
         </div>
-        <div class="flex justify-center p-0 sm:p-4 lg:pt-10 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-          <img class="w-full max-w-none h-auto rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[90%] md:w-[80%] lg:w-[48rem] object-cover" src="${project.image}" alt="${project.title} Image">
+        <div class="p-0 sm:p-4 lg:pt-10 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+          <img class="w-auto max-w-none h-auto rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[90%] md:w-[80%] lg:w-[48rem] object-cover" src="${project.image}" alt="${project.title} Image">
+          <div class="flex gap-2 m-5 p-6">
+            <!-- HTML Logo -->
+            <div class="flex justify-center items-center bg-white p-4 shadow-lg rounded-lg">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="HTML Logo" class="w-12 h-12 aspect-square object-contain">
+            </div>
+            
+            <!-- CSS Logo -->
+            <div class="flex justify-center items-center bg-white p-4 shadow-lg rounded-lg">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="CSS Logo" class="w-12 h-12 aspect-square object-contain">
+            </div>
+            
+            <!-- JavaScript Logo -->
+            <div class="flex justify-center items-center bg-white p-4 shadow-lg rounded-lg">
+              <img src="https://i1.wp.com/www.keesmel.com/wp-content/uploads/2020/09/js-logo.png?fit=500%2C500" alt="JS Logo" class="w-12 h-12 aspect-square object-contain">
+            </div>
+            
+            <!-- PHP Logo -->
+            <div class="flex justify-center items-center bg-white p-4 shadow-lg rounded-lg">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png" alt="PHP Logo" class="w-12 h-12 aspect-square object-contain">
+            </div>
+          </div>
+
         </div>
 
         <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
